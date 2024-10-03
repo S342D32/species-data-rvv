@@ -17,3 +17,5 @@ with st.expander('Data'):
     # Drop the 'species' column
     x = df.drop("species", axis=1)
     st.write(x)  # Display the dataframe without the 'species' column
+chart_data = pd.DataFrame(np.random.randn(20,3),coloumns =("a","b","c"))
+st.scatter_chat(chart_data)
