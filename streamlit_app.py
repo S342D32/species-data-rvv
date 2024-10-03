@@ -19,4 +19,4 @@ with st.expander('Data'):
     x = df.drop("species", axis=1)
     st.write(x)  # Display the dataframe without the 'species' column
 chart_data = pd.DataFrame(np.random.randn(20,3),columns =("a","b","c"))
-st.scatter_chat(chart_data)
+st.scatter_chart(chart_data)
