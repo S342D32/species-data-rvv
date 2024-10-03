@@ -20,4 +20,4 @@ with st.expander('Data'):
     st.write(x)  # Display the dataframe without the 'species' column
 with st.expander('Data Visualization'):
     
-    st.scatter_chart(data =df,x='bill_length_mm',y ='body_mass_g'),colors =='species'
+    st.scatter_chart(data =df,x='bill_length_mm',y ='body_mass_g',colors =='species')
