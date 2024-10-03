@@ -9,3 +9,6 @@ st.write(
 with st.expander('Data'):
     df = pd.read_csv("penguins.csv")
     st.write(df.head())
+    st.write(++x++)
+    x = df.drop(species,axis=1)
+    x
