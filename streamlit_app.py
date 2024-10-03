@@ -23,7 +23,7 @@ with st.expander('Data Visualization'):
     st.scatter_chart(data =df,x='bill_length_mm',y ='body_mass_g',color='species')
 with st.sidebar:
     st.header['Input Feature']
-    island = st.selectbox('Island',('Biscoe','Dream','Targersen')
+    island = st.selectbox('Island',('Biscoe','Dream','Targersen'))
     bill_length_mm=st.sidebar('Bill length(mm)',32.1,59.6,43.9)
     bill_depth_mm =st.sidebar('Bill depth(mm)',13.1,21.5,17.2)
     flipper_length_mm = st.sidebar('flipper_length_mm',172.0,231.0,201.0)
@@ -39,3 +39,4 @@ data={'island',island,
      }
 input_df = pd.DataFrame(data,index[0])
 input_penguines = pd.concat([input_df,x],axis=0)
+input_df
