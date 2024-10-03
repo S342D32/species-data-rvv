@@ -10,5 +10,10 @@ with st.expander('Data'):
     df = pd.read_csv("penguins.csv")
     st.write(df.head())
     st.write(++x++)
-    x = df.drop(species,axis=1)
-    x
+   
+    x = 0
+    st.write(x + 1)  # Correct way to increment and display x
+    
+    # Drop the 'species' column
+    x = df.drop("species", axis=1)
+    st.write(x)  # Display the dataframe without the 'species' column
