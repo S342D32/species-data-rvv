@@ -7,5 +7,5 @@ st.write(
 )
 
 with st.expander('Data'):
-    df = pd.read_csv("Iris.csv")
+    df = pd.read_csv("penguins.csv")
     st.write(df.head())
