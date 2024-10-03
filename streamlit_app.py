@@ -19,6 +19,5 @@ with st.expander('Data'):
     x = df.drop("species", axis=1)
     st.write(x)  # Display the dataframe without the 'species' column
 with st.expander('Data Visualization'):
-    bill_length_mm,bill_depth_mm,flipper_length_mm,body_mass_g,sex
-chart_data = pd.DataFrame(np.random.randn(20,3),columns =("a","b","c"))
-st.scatter_chart(data =df,x='bill_length_mm',y ='body_mass_g'),color ='species'
+    
+st.scatter_chart(data =df,x='bill_length_mm',y ='body_mass_g'),colors ='species'
